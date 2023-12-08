@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkblog"]=self["webpackChunkblog"]||[]).push([[35],{1035:function(u,n,t){t.r(n),t.d(n,{default:function(){return f}});var e=function(){var u=this,n=u._self._c;return n("div",[u._v(" about ")])},r=[],l={data(){return{}}},a=l,c=t(1001),s=(0,c.Z)(a,e,r,!1,null,"78123dce",null),f=s.exports}}]);
+//# sourceMappingURL=35.fcaab4a2.js.map
