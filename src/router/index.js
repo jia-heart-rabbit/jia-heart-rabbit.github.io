@@ -12,7 +12,7 @@ const routes = [
   {
     path:'/user',
     name:'user',
-    component:()=>import('@/views/user.vue'),
+    component:()=>import('@/views/RSS.xml'),
   },
   {
     path:'/like',
