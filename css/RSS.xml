@@ -1,0 +1,276 @@
+<rss version="2.0">
+<channel>
+<title>
+<![CDATA[ qq_53046458的博客 ]]>
+</title>
+<description>
+<![CDATA[ ]]>
+</description>
+<link>https://blog.csdn.net/qq_53046458</link>
+<language>zh-cn</language>
+<generator>https://blog.csdn.net/</generator>
+<copyright>
+<![CDATA[ Copyright &copy; qq_53046458 ]]>
+</copyright>
+<item>
+<title>
+<![CDATA[ LeetCode——最大子数组和（中等） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132587905</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132587905</guid>
+<author>qq_53046458</author>
+<pubDate>Wed, 30 Aug 2023 21:43:47 +0800</pubDate>
+<description>
+<![CDATA[ 受到上一题和为K的子数组的启发，我先确定子数组的结尾，然后往前遍历求和，然后Math.max求最大值，结果超出时间限制。每加一个数字就与没加之前的和比大小，然后再与最大值比大小。forEach是for循环的写法，遍历数组的元素。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——和为K的子数组（中等） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132587127</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132587127</guid>
+<author>qq_53046458</author>
+<pubDate>Wed, 30 Aug 2023 17:26:37 +0800</pubDate>
+<description>
+<![CDATA[ 这个方法非常巧妙，先确定子数组的结尾，然后往前遍历求和。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——找到字符串中所有字母异位词（中等） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132585316</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132585316</guid>
+<author>qq_53046458</author>
+<pubDate>Wed, 30 Aug 2023 17:03:48 +0800</pubDate>
+<description>
+<![CDATA[ 我想的是把p先按照ascii码排序，然后遍历字符串s，一个一个取词再排序，然后与p进行匹配，返回起始索引。用滑动窗口的思路，遍历字符串。待定...过段时间再补。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——无重复的最长子串（中等） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132564126</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132564126</guid>
+<author>qq_53046458</author>
+<pubDate>Tue, 29 Aug 2023 16:21:56 +0800</pubDate>
+<description>
+<![CDATA[ splice()函数第一个参数表示要删除或者添加元素的位置，第二个参数表示删除元素的个数，第三个参数表示要添加的元素。在则删除滑动窗口数组里相同字符及相同字符前的字符，然后将当前字符 push 进数组。遍历字符串，判断字符是否在滑动窗口数组里。然后将 max 更新为当前最长子串的长度。，请你找出其中不含有重复字符的。请注意，你的答案必须是。因为无重复字符的最长子串是。因为无重复字符的最长子串是。因为无重复字符的最长子串是。，所以其长度为 3。，所以其长度为 1。，所以其长度为 3。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——三数之和（中等） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132550750</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132550750</guid>
+<author>qq_53046458</author>
+<pubDate>Tue, 29 Aug 2023 10:58:09 +0800</pubDate>
+<description>
+<![CDATA[ 首先对数组进行排序，排序后固定一个数 nums[i]，再使用左右指针指向 nums[i]后面的两端，数字分别为 nums[L]和 nums[R]，计算三个数的和 sum 判断是否满足为 000，满足则添加进结果集。当 sum == 0 时，nums[R] == nums[R−1] 则会导致结果重复，应该跳过，R−−。当 sum == 0 时，nums[L] == nums[L+1] 则会导致结果重复，应该跳过，L++不同的三元组是 [-1,0,1] 和 [-1,-1,2]。唯一可能的三元组和为 0。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——盛最多水的容器（中等） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132525551</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132525551</guid>
+<author>qq_53046458</author>
+<pubDate>Sun, 27 Aug 2023 17:31:30 +0800</pubDate>
+<description>
+<![CDATA[ 应该用双指针，双指针代表的是可以作为容器边界的所有位置的范围。在一开始，双指针指向数组的左右边界，表示数组中所有的位置都可以作为容器的边界，因为我们还没有进行过任何尝试。在这之后，我们每次将对应的数字较小的那个指针往另一个指的方向移动一个位置，就表示我们认为这个指针不可能再作为容器的边界了。图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。当某一边界确定时，则它为短期内的极大值，即使后续遇见更大值，其前一极大值与当前边界值已组成了最高的高。轴共同构成的容器可以容纳最多的水。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ js数组的sort方法 ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132524778</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132524778</guid>
+<author>qq_53046458</author>
+<pubDate>Sun, 27 Aug 2023 16:27:07 +0800</pubDate>
+<description>
+<![CDATA[ 一开始写力扣的时候var newnums = nums.sort();结果发现怎么也不对，后来查了文档才发现sort直接用的情况是数组是字符串数组，数字数组要通过一个函数作为参数来调用。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——字母异位词分组（中等） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132516469</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132516469</guid>
+<author>qq_53046458</author>
+<pubDate>Sat, 26 Aug 2023 22:00:37 +0800</pubDate>
+<description>
+<![CDATA[ 然后遍历题目给定的数组，分别传入函数中获得新字符串，与map比较，如果map中存在新字符串则把遍历的这个字符串加进去，如果不存在则创建map的新键值对。在for循环中，i of strs代表的是遍历数组中的元素，i in strs的i代表的是索引值，如果是在对象中i in strs的i代表的是属性名。先定义一个自定义函数，把传入的字符串先用split('')拆分成字母数组，然后用sort()排序字母，然后用join('')把字母数组还原成字符串。是由重新排列源单词的所有字母得到的一个新单词。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ 字节跳动第一面记录 ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132346165</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132346165</guid>
+<author>qq_53046458</author>
+<pubDate>Thu, 17 Aug 2023 17:50:11 +0800</pubDate>
+<description>
+<![CDATA[ 先是聊了聊项目的问题，差点把仿掘金官网给说漏嘴了，压根实际就没做过，聊了聊我的个人主页的登录怎么实现的，聊了聊我的微信小程序有没有上线。8.事件冒泡和事件捕获的区别（事件冒泡是从下往上，从目标元素到父元素windows；事件捕获是从上往下，从父元素开始向目标元素传播）手撕代码是写的找出数组和为多少的两个元素的数组下标，挺简单的可是我不会用js，只会java，所以还是要多练习js。以下是记录面试提到的问题：（记录不全）10.学的是vue2还是vue3。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ 第一次面大厂美团经验记录 ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132335788</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132335788</guid>
+<author>qq_53046458</author>
+<pubDate>Thu, 17 Aug 2023 17:36:32 +0800</pubDate>
+<description>
+<![CDATA[ 3.怎么用flex实现九宫格（flex:wrap【换行的意思】,justfy-content:space-evently【元素之间间隔相同，space-between是头和尾和父盒子没有空隙】,align-content:space-evently【元素在交叉轴的对齐排列方式）13.js定义数据的方法，有什么区别（也就是var、let、const的区别）面试官看我简历上项目少然后还有原生js，问问题的时候特别注重原生js。（前面问了好多项目细节，都不记得了）主要问了以下问题：（记录不全） ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ 第一次面试小厂经验记录 ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/132308956</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/132308956</guid>
+<author>qq_53046458</author>
+<pubDate>Tue, 15 Aug 2023 23:08:58 +0800</pubDate>
+<description>
+<![CDATA[ 首先面试官上来并没有让我自我介绍而是和我聊起了天，然后我就展开了我的项目经历说了说，一个是在学校做的原生js的web个人主页，现在看真的好羞耻啊，特别低级的一个项目。第二个是我的大创项目，这个展开了说了说。最后就是聊了一下公司氛围和公司的业务，感觉好像能入职的样子，他说要给我联系hr二面，啊，期待能入职，球球了。5.http和https的区别，s是个啥，说一下tls的过程（惭愧啊我是学信安的TLS握手都忘了）3.怎么判断数据类型（我不太记得typeof了，还是面试官提醒的，我是举例子我当时用过了） ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ V-model和V-bind的区别 ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/131719923</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/131719923</guid>
+<author>qq_53046458</author>
+<pubDate>Fri, 14 Jul 2023 11:29:37 +0800</pubDate>
+<description>
+<![CDATA[ 在开发微信小程序的时候，突然遇到了文本框获取内容点击发送后并清空的问题，当时第一想法是操作dom元素，但是在Vue中不应该操作DOM，所以使用绑定。V-model是用在表单输入的元素中，输入框变data也变，data变输入框也变（双向）而v-bind是用在所有元素中，输入框变data不变，data变输入框变（单向） ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ flex布局--文字多了会挤压另一个div ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/131091866</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/131091866</guid>
+<author>qq_53046458</author>
+<pubDate>Wed, 07 Jun 2023 17:04:07 +0800</pubDate>
+<description>
+<![CDATA[ 在被挤压的盒子上加入：flex-shrink:0。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ Leetcode——无重复字符的最长子串（中等） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/130461742</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/130461742</guid>
+<author>qq_53046458</author>
+<pubDate>Tue, 02 May 2023 23:20:27 +0800</pubDate>
+<description>
+<![CDATA[ 给定一个字符串s，请你找出其中不含有重复字符的的长度。示例 1:输入: s = "abcabcbb"输出: 3解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。示例 2:输入: s = "bbbbb"输出: 1解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。示例 3:输入: s = "pwwkew"输出: 3解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——两数相加（中等） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/130460066</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/130460066</guid>
+<author>qq_53046458</author>
+<pubDate>Mon, 01 May 2023 23:32:34 +0800</pubDate>
+<description>
+<![CDATA[ 给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。请你将两个数相加，并以相同形式返回一个表示和的链表。你可以假设除了数字 0 之外，这两个数都不会以 0 开头。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——汉明距离（简单） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/130000198</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/130000198</guid>
+<author>qq_53046458</author>
+<pubDate>Thu, 06 Apr 2023 21:56:34 +0800</pubDate>
+<description>
+<![CDATA[ 两个整数之间的指的是这两个数字对应二进制位不同的位置的数目。给你两个整数x和y，计算并返回它们之间的汉明距离。示例 1：输入：x = 1, y = 4输出：2解释：↑ ↑上面的箭头指出了对应二进制位不同的位置。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——找到所有数组中消失的数字（简单） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/129977676</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/129977676</guid>
+<author>qq_53046458</author>
+<pubDate>Wed, 05 Apr 2023 21:45:54 +0800</pubDate>
+<description>
+<![CDATA[ 给你一个含 n 个整数的数组 nums ，其中 nums[i] 在区间 [1, n] 内。请你找出所有在 [1, n] 范围内但没有出现在 nums 中的数字，并以数组的形式返回结果。[5,6][2] ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——移动零（简单） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/129964208</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/129964208</guid>
+<author>qq_53046458</author>
+<pubDate>Tue, 04 Apr 2023 23:41:42 +0800</pubDate>
+<description>
+<![CDATA[ 给定一个数组nums，编写一个函数将所有0移动到数组的末尾，同时保持非零元素的相对顺序。，必须在不复制数组的情况下原地对数组进行操作。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——回文链表（简单） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/129958366</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/129958366</guid>
+<author>qq_53046458</author>
+<pubDate>Tue, 04 Apr 2023 23:19:43 +0800</pubDate>
+<description>
+<![CDATA[ 给你一个单链表的头节点head，请你判断该链表是否为回文链表。如果是，返回true；否则，返回false。 ]]>
+</description>
+<category/>
+</item>
+<item>
+<title>
+<![CDATA[ LeetCode——翻转二叉树（简单） ]]>
+</title>
+<link>https://blog.csdn.net/qq_53046458/article/details/129955947</link>
+<guid>https://blog.csdn.net/qq_53046458/article/details/129955947</guid>
+<author>qq_53046458</author>
+<pubDate>Tue, 04 Apr 2023 16:29:59 +0800</pubDate>
+<description>
+<![CDATA[ 给你一棵二叉树的根节点root，翻转这棵二叉树，并返回其根节点。 ]]>
+</description>
+<category/>
+</item>
+</channel>
+</rss>
