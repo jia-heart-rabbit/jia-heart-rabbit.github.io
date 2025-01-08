@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkblog"]=self["webpackChunkblog"]||[]).push([[204],{7204:function(t,n,u){u.r(n),u.d(n,{default:function(){return c}});var e=function(){var t=this,n=t._self._c;return n("div",[t._v(" "+t._s(t.tips)+" ")])},r=[],s={data(){return{tips:"页面还没建好..."}}},l=s,a=u(1001),i=(0,a.Z)(l,e,r,!1,null,"4011b79a",null),c=i.exports}}]);
+//# sourceMappingURL=204.6a68c1fe.js.map
